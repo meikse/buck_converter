@@ -10,7 +10,8 @@ All in all the resistances could be otimized, to draw less current. Because this
 
 ## circuit (hardware)
 the circuit involves a constant voltage source (LM1085) an amplifier (LM358) the buck converter with an an P-channel MOSFET (IRF9Z24NPBF) and of course the controller (attiny13). 
-![circuit](circuit.svg)
+
+![circuit](circuit_design.svg)
 
 ### voltage source
 the voltage source, to generate constant 4.7V for the controller could also be used to transform the 15V into 12V. Here the LM1085 just converts the voltage drop into dissipation with heat. because the controller only draws a small current the dissipation isnt as high as using the LM1085 as the main device to achieve the voltage drop from 15V to 12V. For achieving the right output voltage with this device look at its datasheet.
